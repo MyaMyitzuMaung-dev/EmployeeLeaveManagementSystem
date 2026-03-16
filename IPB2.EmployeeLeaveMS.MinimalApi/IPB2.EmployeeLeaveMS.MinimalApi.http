@@ -1,0 +1,6 @@
+@IPB2.EmployeeLeaveMS.MinimalApi_HostAddress = http://localhost:5186
+
+GET {{IPB2.EmployeeLeaveMS.MinimalApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
