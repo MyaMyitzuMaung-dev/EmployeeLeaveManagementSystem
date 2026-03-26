@@ -1,4 +1,4 @@
-﻿namespace IPB2.EmployeeLeaveMS.WebApi.Features.LeaveApprovals;
+namespace IPB2.EmployeeLeaveMS.BusinessLogic.Features.LeaveApprovals;
 
 // CREATE APPROVAL
 public class LeaveApprovalCreateRequestModel

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace IPB2.EmployeeLeaveMS.Database.AppDbContextModels;

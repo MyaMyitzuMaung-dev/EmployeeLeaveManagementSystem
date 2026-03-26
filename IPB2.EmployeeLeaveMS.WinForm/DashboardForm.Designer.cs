@@ -1,4 +1,4 @@
-﻿namespace IPB2.EmployeeLeaveMS.WinForm
+namespace IPB2.EmployeeLeaveMS.WinForm
 {
     partial class DashboardForm
     {

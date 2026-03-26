@@ -1,4 +1,4 @@
-using IPB2.EmployeeLeaveMS.WebApi.Features.LeaveTypes;
+using IPB2.EmployeeLeaveMS.BusinessLogic.Features.LeaveTypes;
 
 namespace IPB2.EmployeeLeaveMS.WinForm.Features.LeaveTypes
 {

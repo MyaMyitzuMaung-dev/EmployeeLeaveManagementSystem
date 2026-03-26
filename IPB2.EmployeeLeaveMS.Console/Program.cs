@@ -1,9 +1,9 @@
-﻿using IPB2.EmployeeLeaveMS.Database.AppDbContextModels;
-using IPB2.EmployeeLeaveMS.WebApi.Features.Employees;
-using IPB2.EmployeeLeaveMS.WebApi.Features.LeaveApprovals;
-using IPB2.EmployeeLeaveMS.WebApi.Features.LeaveRequests;
-using IPB2.EmployeeLeaveMS.WebApi.Features.LeaveTypes;
-using IPB2.EmployeeLeaveMS.WebApi.Features.Reports;
+using IPB2.EmployeeLeaveMS.Database.AppDbContextModels;
+using IPB2.EmployeeLeaveMS.BusinessLogic.Features.Employees;
+using IPB2.EmployeeLeaveMS.BusinessLogic.Features.LeaveApprovals;
+using IPB2.EmployeeLeaveMS.BusinessLogic.Features.LeaveRequests;
+using IPB2.EmployeeLeaveMS.BusinessLogic.Features.LeaveTypes;
+using IPB2.EmployeeLeaveMS.BusinessLogic.Features.Reports;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

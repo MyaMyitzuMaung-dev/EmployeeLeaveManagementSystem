@@ -3,6 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\IPB2.EmployeeLeaveMS.Database\IPB2.EmployeeLeaveMS.Database.csproj" />
     <ProjectReference Include="..\IPB2.EmployeeLeaveMS.WebApi\IPB2.EmployeeLeaveMS.WebApi.csproj" />
+    <ProjectReference Include="..\IPB2.EmployeeLeaveMS.BusinessLogic\IPB2.EmployeeLeaveMS.BusinessLogic.csproj" />
   </ItemGroup>
 
   <ItemGroup>

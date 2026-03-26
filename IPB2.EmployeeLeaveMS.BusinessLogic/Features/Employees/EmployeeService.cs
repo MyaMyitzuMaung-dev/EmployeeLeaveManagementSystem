@@ -1,7 +1,7 @@
-﻿using IPB2.EmployeeLeaveMS.Database.AppDbContextModels;
+using IPB2.EmployeeLeaveMS.Database.AppDbContextModels;
 using Microsoft.EntityFrameworkCore;
 
-namespace IPB2.EmployeeLeaveMS.WebApi.Features.Employees
+namespace IPB2.EmployeeLeaveMS.BusinessLogic.Features.Employees
 {
     public class EmployeeService
     {
@@ -67,6 +67,37 @@ namespace IPB2.EmployeeLeaveMS.WebApi.Features.Employees
                 Employees = employees
             };
         }
+
+        // EMPLOYEE DETAIL
+        public async Task<EmployeeDetailResponseModel> GetByIdAsync(EmployeeDetailRequestModel request)
+        {
+            var employee = await _context.Employees
+                .FirstOrDefaultAsync(x => x.EmployeeId == request.EmployeeId && !x.IsDeleted);
+
+            if (employee == null)
+            {
+                return new EmployeeDetailResponseModel
+                {
+                    IsSuccess = false,
+                    Message = "Employee not found"
+                };
+            }
+
+            return new EmployeeDetailResponseModel
+            {
+                IsSuccess = true,
+                Message = "Employee retrieved",
+                EmployeeId = employee.EmployeeId,
+                EmployeeCode = employee.EmployeeCode,
+                EmployeeName = employee.EmployeeName,
+                Email = employee.Email,
+                Phone = employee.Phone,
+                Department = employee.Department,
+                Position = employee.Position,
+                JoinDate = employee.JoinDate
+            };
+        }
+
         // UPDATE EMPLOYEE
         public async Task<EmployeeEditResponseModel> UpdateAsync(EmployeeEditRequestModel request)
         {

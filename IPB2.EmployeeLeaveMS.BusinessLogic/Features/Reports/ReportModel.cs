@@ -1,4 +1,4 @@
-﻿namespace IPB2.EmployeeLeaveMS.WebApi.Features.Reports;
+namespace IPB2.EmployeeLeaveMS.BusinessLogic.Features.Reports;
 
 public class MonthlyLeaveReportRequestModel
 {

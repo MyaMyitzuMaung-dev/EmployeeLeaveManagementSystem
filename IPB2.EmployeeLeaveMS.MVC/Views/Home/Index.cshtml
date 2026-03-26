@@ -1,8 +1,148 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Dashboard";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="mb-5">
+    <h1 class="fw-bold mb-1">Welcome back!</h1>
+    <p class="text-muted">Here's what's happening in the Leave Management System today.</p>
 </div>
+
+<div class="row g-4 mb-5">
+    <div class="col-md-3">
+        <div class="card border-0 p-4 shadow-sm" style="background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%); color: white;">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <span class="d-block small mb-1 opacity-75">Total Employees</span>
+                    <h2 class="fw-bold mb-0">128</h2> @* Placeholder values for demo *@
+                </div>
+                <i class="bi bi-people-fill fs-1 opacity-25"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-0 p-4 shadow-sm bg-white">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <span class="d-block small mb-1 text-muted">Pending Requests</span>
+                    <h2 class="fw-bold mb-0 text-warning">12</h2>
+                </div>
+                <i class="bi bi-clock-fill fs-1 text-warning opacity-25"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-0 p-4 shadow-sm bg-white">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <span class="d-block small mb-1 text-muted">Leaves Today</span>
+                    <h2 class="fw-bold mb-0 text-primary">8</h2>
+                </div>
+                <i class="bi bi-calendar-check-fill fs-1 text-primary opacity-25"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-0 p-4 shadow-sm bg-white">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <span class="d-block small mb-1 text-muted">New Applications</span>
+                    <h2 class="fw-bold mb-0 text-success">5</h2>
+                </div>
+                <i class="bi bi-plus-circle-fill fs-1 text-success opacity-25"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-lg-8">
+        <div class="card border-0 p-4 shadow-sm h-100 bg-white">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h4 class="fw-bold m-0">Recent Activities</h4>
+                <a href="#" class="btn btn-sm btn-light border px-3">View All</a>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item px-0 py-3 border-0 border-bottom">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0 bg-light p-2 rounded-3 me-3">
+                            <i class="bi bi-person-plus text-primary"></i>
+                        </div>
+                        <div class="flex-grow-1">
+                            <span class="fw-bold">New Employee Added</span>
+                            <p class="text-muted small mb-0">John Doe joined the IT department.</p>
+                        </div>
+                        <span class="text-muted small">2h ago</span>
+                    </div>
+                </li>
+                <li class="list-group-item px-0 py-3 border-0 border-bottom">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0 bg-light p-2 rounded-3 me-3">
+                            <i class="bi bi-calendar-check text-success"></i>
+                        </div>
+                        <div class="flex-grow-1">
+                            <span class="fw-bold">Leave Approved</span>
+                            <p class="text-muted small mb-0">Sarah Wilson's Annual Leave was approved.</p>
+                        </div>
+                        <span class="text-muted small">5h ago</span>
+                    </div>
+                </li>
+                <li class="list-group-item px-0 py-3 border-0">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0 bg-light p-2 rounded-3 me-3">
+                            <i class="bi bi-send text-warning"></i>
+                        </div>
+                        <div class="flex-grow-1">
+                            <span class="fw-bold">New Leave Request</span>
+                            <p class="text-muted small mb-0">Mike Ross applied for Sick Leave.</p>
+                        </div>
+                        <span class="text-muted small">1d ago</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card border-0 p-4 shadow-sm h-100 bg-white">
+            <h4 class="fw-bold mb-4">Quick Actions</h4>
+            <div class="d-grid gap-3">
+                <a asp-controller="LeaveRequests" asp-action="Create" class="btn btn-outline-primary border-2 text-start p-3 rounded-4 transition-all">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-send-fill fs-3 me-3"></i>
+                        <div>
+                            <span class="fw-bold d-block">Apply for Leave</span>
+                            <span class="small opacity-75">Submit a new request</span>
+                        </div>
+                    </div>
+                </a>
+                <a asp-controller="LeaveApprovals" asp-action="Pending" class="btn btn-outline-warning border-2 text-start p-3 rounded-4 transition-all" style="color: #d97706; border-color: #f59e0b;">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-check-all fs-3 me-3"></i>
+                        <div>
+                            <span class="fw-bold d-block">Manage Approvals</span>
+                            <span class="small opacity-75">Process pending requests</span>
+                        </div>
+                    </div>
+                </a>
+                <a asp-controller="Reports" asp-action="Index" class="btn btn-outline-info border-2 text-start p-3 rounded-4 transition-all" style="color: #0891b2; border-color: #06b6d4;">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-bar-chart-fill fs-3 me-3"></i>
+                        <div>
+                            <span class="fw-bold d-block">System Reports</span>
+                            <span class="small opacity-75">View analytics</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .transition-all {
+        transition: all 0.3s ease;
+    }
+    .transition-all:hover {
+        transform: scale(1.02);
+        background-color: rgba(0, 0, 0, 0.02);
+    }
+</style>

@@ -1,4 +1,4 @@
-﻿namespace IPB2.EmployeeLeaveMS.WebApi.Features.LeaveTypes;
+namespace IPB2.EmployeeLeaveMS.BusinessLogic.Features.LeaveTypes;
 
 // CREATE
 public class LeaveTypeCreateRequestModel

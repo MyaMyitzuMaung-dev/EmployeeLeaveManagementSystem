@@ -1,6 +1,6 @@
-using IPB2.EmployeeLeaveMS.WebApi.Features.Employees;
-using IPB2.EmployeeLeaveMS.WebApi.Features.LeaveApprovals;
-using IPB2.EmployeeLeaveMS.WebApi.Features.LeaveRequests;
+using IPB2.EmployeeLeaveMS.BusinessLogic.Features.Employees;
+using IPB2.EmployeeLeaveMS.BusinessLogic.Features.LeaveApprovals;
+using IPB2.EmployeeLeaveMS.BusinessLogic.Features.LeaveRequests;
 
 namespace IPB2.EmployeeLeaveMS.WinForm.Features.LeaveApprovals
 {
