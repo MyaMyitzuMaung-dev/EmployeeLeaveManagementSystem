@@ -33,7 +33,8 @@ namespace IPB2.EmployeeLeaveMS.BusinessLogic.Features.LeaveApprovals
                 LeaveRequestId = request.LeaveRequestId,
                 ApprovedBy = request.ApprovedBy,
                 ApprovalStatus = request.ApprovalStatus,
-                Comments = request.Comments
+                Comments = request.Comments ?? string.Empty,
+                ApprovalDate = DateTime.Now
             };
 
             await _context.LeaveApprovals.AddAsync(approval);

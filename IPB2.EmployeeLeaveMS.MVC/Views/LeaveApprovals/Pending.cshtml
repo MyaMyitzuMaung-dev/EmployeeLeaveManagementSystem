@@ -74,7 +74,7 @@
 
                         <form asp-action="Approve" method="post" class="d-inline">
                             <input type="hidden" name="LeaveRequestId" value="@req.LeaveRequestId" />
-                            <input type="hidden" name="ApproverId" value="1" /> @* Hardcoded for demo *@
+                            <input type="hidden" name="ApprovedBy" value="@ViewBag.DefaultApproverId" />
                             <div class="mb-3">
                                 <input name="Comments" class="form-control border-0 bg-light rounded-3 small" placeholder="Add comments..." />
                             </div>
