@@ -1,9 +1,10 @@
+using IPB2.EmployeeLeaveMS.Domain;
+using IPB2.EmployeeLeaveMS.Domain.Features.Employees;
+using IPB2.EmployeeLeaveMS.Domain.Features.LeaveApprovals;
+using IPB2.EmployeeLeaveMS.Domain.Features.LeaveRequests;
+using IPB2.EmployeeLeaveMS.Domain.Features.LeaveTypes;
+using IPB2.EmployeeLeaveMS.Domain.Features.Reports;
 using IPB2.EmployeeLeaveMS.Database.AppDbContextModels;
-using IPB2.EmployeeLeaveMS.BusinessLogic.Features.Employees;
-using IPB2.EmployeeLeaveMS.BusinessLogic.Features.LeaveApprovals;
-using IPB2.EmployeeLeaveMS.BusinessLogic.Features.LeaveRequests;
-using IPB2.EmployeeLeaveMS.BusinessLogic.Features.LeaveTypes;
-using IPB2.EmployeeLeaveMS.BusinessLogic.Features.Reports;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,16 +14,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Register AppDbContext
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
 // Register Services from WebApi 프로젝트
-builder.Services.AddScoped<EmployeeService>();
-builder.Services.AddScoped<LeaveTypeService>();
-builder.Services.AddScoped<LeaveRequestService>();
-builder.Services.AddScoped<LeaveApprovalService>();
-builder.Services.AddScoped<ReportService>();
+builder.AddDomain();
 
 var app = builder.Build();
 

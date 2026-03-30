@@ -1,4 +1,4 @@
-using IPB2.EmployeeLeaveMS.BusinessLogic.Features.LeaveTypes;
+using IPB2.EmployeeLeaveMS.Domain.Features.LeaveTypes;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IPB2.EmployeeLeaveMS.WebApi.Features.LeaveTypes

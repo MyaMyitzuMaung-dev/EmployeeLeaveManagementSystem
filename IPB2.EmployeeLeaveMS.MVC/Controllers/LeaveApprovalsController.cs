@@ -1,5 +1,5 @@
-using IPB2.EmployeeLeaveMS.BusinessLogic.Features.LeaveApprovals;
-using IPB2.EmployeeLeaveMS.BusinessLogic.Features.LeaveRequests;
+using IPB2.EmployeeLeaveMS.Domain.Features.LeaveApprovals;
+using IPB2.EmployeeLeaveMS.Domain.Features.LeaveRequests;
 using IPB2.EmployeeLeaveMS.Database.AppDbContextModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;

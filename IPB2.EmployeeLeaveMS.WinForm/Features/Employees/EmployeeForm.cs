@@ -1,4 +1,4 @@
-using IPB2.EmployeeLeaveMS.BusinessLogic.Features.Employees;
+using IPB2.EmployeeLeaveMS.Domain.Features.Employees;
 
 namespace IPB2.EmployeeLeaveMS.WinForm.Features.Employees
 {

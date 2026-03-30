@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPB2.EmployeeLeaveMS.WinFor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPB2.EmployeeLeaveMS.MVC", "IPB2.EmployeeLeaveMS.MVC\IPB2.EmployeeLeaveMS.MVC.csproj", "{1B5177B9-866A-40B8-B8A7-035322FB77B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPB2.EmployeeLeaveMS.BusinessLogic", "IPB2.EmployeeLeaveMS.BusinessLogic\IPB2.EmployeeLeaveMS.BusinessLogic.csproj", "{719D3AFA-E2C9-45EA-BC85-5FAA9401CF5B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPB2.EmployeeLeaveMS.Domain", "IPB2.EmployeeLeaveMS.Domain\IPB2.EmployeeLeaveMS.Domain.csproj", "{719D3AFA-E2C9-45EA-BC85-5FAA9401CF5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

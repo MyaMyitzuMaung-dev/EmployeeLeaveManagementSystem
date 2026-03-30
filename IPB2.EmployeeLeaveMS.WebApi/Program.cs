@@ -1,4 +1,10 @@
 using IPB2.EmployeeLeaveMS.Database.AppDbContextModels;
+using IPB2.EmployeeLeaveMS.Domain;
+using IPB2.EmployeeLeaveMS.Domain.Features.Employees;
+using IPB2.EmployeeLeaveMS.Domain.Features.LeaveApprovals;
+using IPB2.EmployeeLeaveMS.Domain.Features.LeaveRequests;
+using IPB2.EmployeeLeaveMS.Domain.Features.LeaveTypes;
+using IPB2.EmployeeLeaveMS.Domain.Features.Reports;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,16 +13,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-// Register AppDbContext
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
 // Register Services
-builder.Services.AddScoped<IPB2.EmployeeLeaveMS.BusinessLogic.Features.Employees.EmployeeService>();
-builder.Services.AddScoped<IPB2.EmployeeLeaveMS.BusinessLogic.Features.LeaveTypes.LeaveTypeService>();
-builder.Services.AddScoped<IPB2.EmployeeLeaveMS.BusinessLogic.Features.LeaveRequests.LeaveRequestService>();
-builder.Services.AddScoped<IPB2.EmployeeLeaveMS.BusinessLogic.Features.LeaveApprovals.LeaveApprovalService>();
-builder.Services.AddScoped< IPB2.EmployeeLeaveMS.BusinessLogic.Features.Reports.ReportService> ();
+builder.AddDomain();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

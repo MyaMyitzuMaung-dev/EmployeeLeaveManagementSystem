@@ -1,4 +1,4 @@
-namespace IPB2.EmployeeLeaveMS.BusinessLogic.Features.LeaveRequests;
+namespace IPB2.EmployeeLeaveMS.Domain.Features.LeaveRequests;
 
 // CREATE
 public class LeaveRequestCreateRequestModel

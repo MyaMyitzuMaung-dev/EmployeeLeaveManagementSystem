@@ -1,4 +1,4 @@
-using IPB2.EmployeeLeaveMS.BusinessLogic.Features.Reports;
+using IPB2.EmployeeLeaveMS.Domain.Features.Reports;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

@@ -1,5 +1,5 @@
-using IPB2.EmployeeLeaveMS.BusinessLogic.Features.Employees;
-using IPB2.EmployeeLeaveMS.BusinessLogic.Features.Reports;
+using IPB2.EmployeeLeaveMS.Domain.Features.Employees;
+using IPB2.EmployeeLeaveMS.Domain.Features.Reports;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 

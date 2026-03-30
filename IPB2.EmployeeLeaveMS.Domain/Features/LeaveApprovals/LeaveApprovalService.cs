@@ -1,7 +1,7 @@
 using IPB2.EmployeeLeaveMS.Database.AppDbContextModels;
 using Microsoft.EntityFrameworkCore;
 
-namespace IPB2.EmployeeLeaveMS.BusinessLogic.Features.LeaveApprovals
+namespace IPB2.EmployeeLeaveMS.Domain.Features.LeaveApprovals
 {
     public class LeaveApprovalService
     {

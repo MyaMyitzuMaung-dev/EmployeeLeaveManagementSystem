@@ -1,4 +1,4 @@
-using IPB2.EmployeeLeaveMS.BusinessLogic.Features.LeaveRequests;
+using IPB2.EmployeeLeaveMS.Domain.Features.LeaveRequests;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IPB2.EmployeeLeaveMS.WebApi.Features.LeaveRequests

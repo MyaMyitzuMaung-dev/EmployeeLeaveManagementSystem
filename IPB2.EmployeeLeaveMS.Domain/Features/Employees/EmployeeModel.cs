@@ -1,4 +1,4 @@
-namespace IPB2.EmployeeLeaveMS.BusinessLogic.Features.Employees;
+namespace IPB2.EmployeeLeaveMS.Domain.Features.Employees;
 
 public class EmployeeCreateRequestModel
 {

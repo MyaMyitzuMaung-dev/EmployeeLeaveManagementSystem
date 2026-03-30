@@ -1,4 +1,4 @@
-using IPB2.EmployeeLeaveMS.BusinessLogic.Features.Employees;
+using IPB2.EmployeeLeaveMS.Domain.Features.Employees;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IPB2.EmployeeLeaveMS.MVC.Controllers
