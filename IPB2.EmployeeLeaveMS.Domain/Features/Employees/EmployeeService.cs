@@ -128,7 +128,7 @@ namespace IPB2.EmployeeLeaveMS.Domain.Features.Employees
             };
         }
 
-        // DELETE (SOFT DELETE)
+        // DELETE (for SOFT DELETE)
         public async Task<EmployeeDeleteResponseModel> DeleteAsync(EmployeeDeleteRequestModel request)
         {
             var employee = await _context.Employees
