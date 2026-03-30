@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPB2.EmployeeLeaveMS.MVC", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPB2.EmployeeLeaveMS.Domain", "IPB2.EmployeeLeaveMS.Domain\IPB2.EmployeeLeaveMS.Domain.csproj", "{719D3AFA-E2C9-45EA-BC85-5FAA9401CF5B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPB2.EmployeeLeaveMS.MVCwithHttpClient", "IPB2.EmployeeLeaveMS.MVCwithHttpClient\IPB2.EmployeeLeaveMS.MVCwithHttpClient.csproj", "{AFB25444-B0BD-4AC7-BCD2-623F373240DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,18 @@ Global
 		{719D3AFA-E2C9-45EA-BC85-5FAA9401CF5B}.Release|x64.Build.0 = Release|Any CPU
 		{719D3AFA-E2C9-45EA-BC85-5FAA9401CF5B}.Release|x86.ActiveCfg = Release|Any CPU
 		{719D3AFA-E2C9-45EA-BC85-5FAA9401CF5B}.Release|x86.Build.0 = Release|Any CPU
+		{AFB25444-B0BD-4AC7-BCD2-623F373240DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFB25444-B0BD-4AC7-BCD2-623F373240DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFB25444-B0BD-4AC7-BCD2-623F373240DD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AFB25444-B0BD-4AC7-BCD2-623F373240DD}.Debug|x64.Build.0 = Debug|Any CPU
+		{AFB25444-B0BD-4AC7-BCD2-623F373240DD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AFB25444-B0BD-4AC7-BCD2-623F373240DD}.Debug|x86.Build.0 = Debug|Any CPU
+		{AFB25444-B0BD-4AC7-BCD2-623F373240DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFB25444-B0BD-4AC7-BCD2-623F373240DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFB25444-B0BD-4AC7-BCD2-623F373240DD}.Release|x64.ActiveCfg = Release|Any CPU
+		{AFB25444-B0BD-4AC7-BCD2-623F373240DD}.Release|x64.Build.0 = Release|Any CPU
+		{AFB25444-B0BD-4AC7-BCD2-623F373240DD}.Release|x86.ActiveCfg = Release|Any CPU
+		{AFB25444-B0BD-4AC7-BCD2-623F373240DD}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
